@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="CrushCash — Nigeria's #1 Competitive Candy Gaming Platform. Play candy crush, win real Naira."/>
+    <meta name="theme-color" content="#07071A"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍬</text></svg>"/>
+    <title>CrushCash — Crush Candies. Win Real Cash.</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root { height: 100%; }
+      body {
+        background: #07071A;
+        color: #F1F5F9;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
+      ::-webkit-scrollbar-thumb { background: rgba(124,58,237,0.5); border-radius: 3px; }
+      input, button, select, textarea { font-family: inherit; }
+
+      @keyframes floatUp {
+        0%   { opacity:1; transform:translateY(0) scale(1); }
+        80%  { opacity:1; }
+        100% { opacity:0; transform:translateY(-110px) scale(1.6); }
+      }
+      @keyframes popIn {
+        0%   { opacity:0; transform:scale(0.5) translateY(20px); }
+        70%  { transform:scale(1.1) translateY(-4px); }
+        100% { opacity:1; transform:scale(1) translateY(0); }
+      }
+      @keyframes shimmer {
+        0%   { background-position: -400px 0; }
+        100% { background-position:  400px 0; }
+      }
+      @keyframes pulse {
+        0%,100% { transform:scale(1); }
+        50%      { transform:scale(1.04); }
+      }
+      @keyframes timerWarn {
+        0%,100% { color:#F59E0B; }
+        50%     { color:#FF6B00; }
+      }
+      @keyframes timerDanger {
+        0%,100% { color:#EF4444; text-shadow:0 0 20px rgba(239,68,68,0.8); }
+        50%     { color:#FF8888; text-shadow:0 0 30px rgba(239,68,68,0.6); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
